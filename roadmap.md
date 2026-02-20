@@ -13,7 +13,7 @@ It emphasizes:
 
 # 🟢 BASIC - Language Fundamentals (With Go-Specific Gotchas)
 
-## 1. Core Syntax
+## 1. [Core Syntax](./basic/01-core-syntax)
 - Go program structure (`package main`, `func main`)
 - Variable declaration (`var`, `:=`)
 - Zero values
@@ -25,7 +25,7 @@ It emphasizes:
 
 ---
 
-## 2. Control Flow
+## 2. [Control Flow](./basic/02-control-flow)
 - `if`, `else if`, `else`
 - Expression-less `switch`
 - `for` (the only loop)
@@ -35,7 +35,7 @@ It emphasizes:
 
 ---
 
-## 3. Functions
+## 3. [Functions](./basic/03-functions)
 - Multiple return values
 - Named return parameters
 - Variadic functions
@@ -46,7 +46,7 @@ It emphasizes:
 
 ---
 
-## 4. Standard Collections
+## 4. [Standard Collections](./basic/04-standard-collections)
 
 ### Arrays
 - Value semantics
@@ -75,7 +75,7 @@ It emphasizes:
 
 ---
 
-## 5. Pointers
+## 5. [Pointers](./basic/05-pointers)
 - `&`, `*`
 - Pointer to struct
 - Mutability vs copy
@@ -85,7 +85,7 @@ It emphasizes:
 
 ---
 
-## 6. Errors (Foundational)
+## 6. [Errors (Foundational)](./basic/06-errors-foundational)
 - `error` as a value
 - `errors.New`, `fmt.Errorf`
 - Value, err pattern
@@ -94,7 +94,7 @@ It emphasizes:
 
 ---
 
-## 7. Defer, Panic, Recover
+## 7. [Defer, Panic, Recover](./basic/07-defer-panic-recover)
 - `defer` execution order (LIFO)
 - Defer + named return interaction
 - Resource safety patterns
@@ -104,7 +104,7 @@ It emphasizes:
 
 ---
 
-## 8. Strings, Bytes, and Runes
+## 8. [Strings, Bytes, and Runes](./basic/08-strings-bytes-and-runes)
 - UTF-8 model
 - `string` vs `[]byte`
 - `rune`
@@ -114,7 +114,7 @@ It emphasizes:
 
 ---
 
-## 9. Time
+## 9. [Time](./basic/09-time)
 - `time.Duration`
 - `time.Now()` monotonic behavior
 - `time.After` vs `time.NewTimer`
@@ -126,7 +126,7 @@ It emphasizes:
 
 # 🟡 INTERMEDIATE - Idiomatic & Production Go
 
-## 10. Methods and Composition
+## 10. [Methods and Composition](./intermediate/10-methods-and-composition)
 - Value vs pointer receivers
 - Method sets and interface satisfaction
 - Embedding (composition over inheritance)
@@ -138,7 +138,7 @@ It emphasizes:
 
 ---
 
-## 11. Packages and Modules
+## 11. [Packages and Modules](./intermediate/11-packages-and-modules)
 - Code organization principles
 - Internal packages
 - Public API surface control
@@ -153,7 +153,7 @@ It emphasizes:
 
 ---
 
-## 12. Tooling & Static Analysis
+## 12. [Tooling & Static Analysis](./intermediate/12-tooling-and-static-analysis)
 - `go build`
 - `go test ./...`
 - `go vet`
@@ -167,7 +167,7 @@ It emphasizes:
 
 ---
 
-## 13. Goroutines
+## 13. [Goroutines](./intermediate/13-goroutines)
 - `go func() {}`
 - Concurrency vs parallelism
 - Scheduling model overview
@@ -179,7 +179,7 @@ It emphasizes:
 
 ---
 
-## 14. Channels
+## 14. [Channels](./intermediate/14-channels)
 - `make(chan T)`
 - Buffered vs unbuffered
 - Send / receive
@@ -192,7 +192,7 @@ It emphasizes:
 
 ---
 
-## 15. Synchronization Primitives
+## 15. [Synchronization Primitives](./intermediate/15-synchronization-primitives)
 - `sync.WaitGroup`
 - `sync.Mutex`
 - `sync.RWMutex`
@@ -204,7 +204,7 @@ It emphasizes:
 
 ---
 
-## 16. Context
+## 16. [Context](./intermediate/16-context)
 - `context.Background`
 - `WithCancel`, `WithTimeout`, `WithDeadline`
 - Cancellation propagation
@@ -215,7 +215,7 @@ It emphasizes:
 
 ---
 
-## 17. Idiomatic Error Handling (Advanced)
+## 17. [Idiomatic Error Handling (Advanced)](./intermediate/17-idiomatic-error-handling-advanced)
 - `errors.Is`
 - `errors.As`
 - Error wrapping
@@ -227,7 +227,7 @@ It emphasizes:
 
 ---
 
-## 18. Testing
+## 18. [Testing](./intermediate/18-testing)
 - `testing` package
 - Table-driven tests
 - Subtests (`t.Run`)
@@ -240,7 +240,7 @@ It emphasizes:
 
 ---
 
-## 19. Filesystem & OS
+## 19. [Filesystem & OS](./intermediate/19-filesystem-and-os)
 - `os.Open`, `os.Create`
 - `io/fs`
 - Temp files
@@ -251,7 +251,7 @@ It emphasizes:
 
 ---
 
-## 20. Database & IO Patterns
+## 20. [Database & IO Patterns](./intermediate/20-database-and-io-patterns)
 - `database/sql`
 - Connection pooling
 - Context-aware queries
@@ -263,7 +263,7 @@ It emphasizes:
 
 ---
 
-## 21. HTTP and JSON
+## 21. [HTTP and JSON](./intermediate/21-http-and-json)
 - `net/http` handlers
 - Server lifecycle
 - Middleware chaining
@@ -277,7 +277,7 @@ It emphasizes:
 
 # 🔴 ADVANCED - Strong + Production Level
 
-## 22. Advanced Concurrency Patterns
+## 22. [Advanced Concurrency Patterns](./advanced/22-advanced-concurrency-patterns)
 - Worker pools
 - Fan-in / fan-out
 - Pipelines
@@ -288,7 +288,7 @@ It emphasizes:
 
 ---
 
-## 23. Memory Model
+## 23. [Memory Model](./advanced/23-memory-model)
 - Escape analysis (`-gcflags="-m"`)
 - Stack vs heap
 - Inlining
@@ -299,7 +299,7 @@ It emphasizes:
 
 ---
 
-## 24. Garbage Collector
+## 24. [Garbage Collector](./advanced/24-garbage-collector)
 - Tracing GC model
 - STW phases
 - Allocation patterns
@@ -308,7 +308,7 @@ It emphasizes:
 
 ---
 
-## 25. Generics
+## 25. [Generics](./advanced/25-generics)
 - Type parameters
 - Constraints
 - Comparable
@@ -318,7 +318,7 @@ It emphasizes:
 
 ---
 
-## 26. Reflection
+## 26. [Reflection](./advanced/26-reflection)
 - `reflect.Type`
 - `reflect.Value`
 - When reflection is justified
@@ -327,7 +327,7 @@ It emphasizes:
 
 ---
 
-## 27. Profiling & Observability
+## 27. [Profiling & Observability](./advanced/27-profiling-and-observability)
 - `pprof` (CPU, heap, goroutine)
 - `trace`
 - Exposing `/debug/pprof`
@@ -337,7 +337,7 @@ It emphasizes:
 
 ---
 
-## 28. Go in Production
+## 28. [Go in Production](./advanced/28-go-in-production)
 - Project layout
 - Clean Architecture vs pragmatic layout
 - Graceful shutdown
@@ -350,7 +350,7 @@ It emphasizes:
 
 ---
 
-## 29. Go + Infrastructure
+## 29. [Go + Infrastructure](./advanced/29-go-infrastructure)
 - Cross-compilation
 - CGO basics
 - Docker multi-stage builds
